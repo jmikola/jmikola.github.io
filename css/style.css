@@ -223,6 +223,7 @@ h1 { color: #666; font-size: 3em; margin-bottom: 0.1em; background: url("http://
 #elsewhere a { background-position: left center; background-repeat: no-repeat; opacity: 0.5; }
 #elsewhere a:hover { opacity: 1.0; }
 #elsewhere a[href*="github"]   { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.github.com");   padding-left: 24px; }
+#elsewhere a[href*="gmail"]    { background-image: url("http://www.google.com/profiles/c/favicons?domain=mail.google.com");  padding-left: 24px; }
 #elsewhere a[href*="facebook"] { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.facebook.com"); padding-left: 24px; }
 #elsewhere a[href*="linkedin"] { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.linkedin.com"); padding-left: 24px; }
 #elsewhere a[href*="reddit"]   { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.reddit.com");   padding-left: 24px; }
