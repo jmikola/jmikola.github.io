@@ -211,11 +211,11 @@ body { font-family: "InconsolataMedium"; margin-top: 5em; }
 a:link, a:visited { color: #000; font-weight: bold; text-decoration: none; }
 
 header { border-bottom: 3px solid #444; margin-bottom: 1em; }
-h1 { color: #666; font-size: 3em; margin-bottom: 0; background: url("http://www.gravatar.com/avatar/f23700b51dc0c196c1dc02f84aeeecdf?size=39") no-repeat left center; padding-left: 50px; }
+h1 { color: #666; font-size: 3em; margin-bottom: 0.1em; background: url("http://www.gravatar.com/avatar/f23700b51dc0c196c1dc02f84aeeecdf?size=39") no-repeat left center; padding-left: 50px; }
 
 #content { font-size: 1.5em; line-height: 1.5em; }
 
-#about p { text-indent: 1em; margin-bottom: 1.5em; }
+#about p { text-indent: 1em; margin: 0 0.5em 1.5em; }
 
 #elsewhere ul { list-style: none; margin: 0; }
 #elsewhere a { background-position: left center; background-repeat: no-repeat; opacity: 0.5; }
