@@ -226,6 +226,11 @@ h1 { color: #666; font-size: 3em; margin-bottom: 0; background: url("http://www.
 #elsewhere a[href*="reddit"]   { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.reddit.com");   padding-left: 24px; }
 #elsewhere a[href*="twitter"]  { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.twitter.com");  padding-left: 24px; }
 
+footer { margin: 2em 0; text-align: center; }
+footer a:link, footer a:visited { color: #666; }
+footer a:before { content: "/* "; }
+footer a:after  { content: " */"; }
+
 
 
 
