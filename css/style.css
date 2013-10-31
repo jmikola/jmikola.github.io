@@ -219,16 +219,17 @@ h1 { color: #666; font-size: 3em; margin-bottom: 0.1em; background: url("http://
 
 #about p { text-indent: 1em; margin: 0 0.5em 1.5em; }
 
+#elsewhere { font-size: 1.5em; line-height: 1.5em; }
 #elsewhere ul { list-style: none; margin: 0; }
-#elsewhere a { background-position: left center; background-repeat: no-repeat; opacity: 0.5; }
+#elsewhere a { background-position: left center; background-repeat: no-repeat; background-size: contain; opacity: 0.5; padding-left: 24px; }
 #elsewhere a:hover { opacity: 1.0; }
-#elsewhere a[href*="github"]   { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.github.com");   padding-left: 24px; }
-#elsewhere a[href*="gmail"]    { background-image: url("http://www.google.com/profiles/c/favicons?domain=mail.google.com");  padding-left: 24px; }
-#elsewhere a[href*="facebook"] { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.facebook.com"); padding-left: 24px; }
-#elsewhere a[href*="foursquare"] { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.foursquare.com"); padding-left: 24px; }
-#elsewhere a[href*="linkedin"] { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.linkedin.com"); padding-left: 24px; }
-#elsewhere a[href*="reddit"]   { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.reddit.com");   padding-left: 24px; }
-#elsewhere a[href*="twitter"]  { background-image: url("http://www.google.com/profiles/c/favicons?domain=www.twitter.com");  padding-left: 24px; }
+#elsewhere a[href*="github"]     { background-image: url("http://www.google.com/s2/favicons?domain=github.com"); }
+#elsewhere a[href*="gmail"]      { background-image: url("http://www.google.com/s2/favicons?domain=mail.google.com"); }
+#elsewhere a[href*="facebook"]   { background-image: url("http://www.google.com/s2/favicons?domain=facebook.com"); }
+#elsewhere a[href*="foursquare"] { background-image: url("http://www.google.com/s2/favicons?domain=foursquare.com"); }
+#elsewhere a[href*="linkedin"]   { background-image: url("http://www.google.com/s2/favicons?domain=linkedin.com"); }
+#elsewhere a[href*="reddit"]     { background-image: url("http://www.google.com/s2/favicons?domain=reddit.com"); }
+#elsewhere a[href*="twitter"]    { background-image: url("http://www.google.com/s2/favicons?domain=twitter.com"); }
 
 footer { margin: 2em 0; text-align: center; }
 footer a:link, footer a:visited { color: #666; }
