@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+header a.navbar-brand {
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("http://www.gravatar.com/avatar/f23700b51dc0c196c1dc02f84aeeecdf?size=128");
+    padding-left: 64px;
+}
+
+header ul.navbar-nav li span.glyphicon { margin-right: 0.5em; }
+
+article.container {
+    font-size: 1.2em;
+}
+
+article.post div.post-tags span.glyphicon { margin-right: 0.5em; }
+article.post div.post-nav span.glyphicon { margin-right: 0.5em; }
+article.post div.post-nav a.list-group-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+footer {
+    border-top: 3px solid #ddd;
+    margin: 1em 0 1em;
+    padding-top: 0.5em;
+}
+
+#elsewhere ul { list-style: none; margin: 0; padding: 0;}
+#elsewhere li { display: inline-block; margin: 0; padding: 0; }
+#elsewhere a {
+    display: inline-block;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+    height: 16px;
+    width: 16px;
+    /* see: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#elsewhere a:hover { opacity: 1.0; }
+#elsewhere a[href*="gmail"]      { background-image: url("http://www.google.com/s2/favicons?domain=mail.google.com"); }
+#elsewhere a[href*="github"]     { background-image: url("http://www.google.com/s2/favicons?domain=github.com"); }
+#elsewhere a[href*="facebook"]   { background-image: url("http://www.google.com/s2/favicons?domain=facebook.com"); }
+#elsewhere a[href*="foursquare"] { background-image: url("http://www.google.com/s2/favicons?domain=blog.foursquare.com"); }
+#elsewhere a[href*="linkedin"]   { background-image: url("http://www.google.com/s2/favicons?domain=linkedin.com"); }
+#elsewhere a[href*="reddit"]     { background-image: url("http://www.google.com/s2/favicons?domain=reddit.com"); }
+#elsewhere a[href*="twitter"]    { background-image: url("http://www.google.com/s2/favicons?domain=twitter.com"); }
+
+

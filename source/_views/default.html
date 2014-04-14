@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }}</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
+
+        <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/styles/github.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ site.url }}/atom.xml" title="{{ site.title }}" rel="alternate" type="application/atom+xml" />
+        <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span class="gravatar"></span>{{ site.title }}</a>
+                </div><!-- /.navbar-header -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/blog"><span class="glyphicon glyphicon-book"></span>Posts</a></li>
+                        <li><a href="/about"><span class="glyphicon glyphicon-info-sign"></span>About</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </header><!-- /.navbar -->
+
+        {% block content_wrapper %}
+            <article class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <header><h1>{{ block('title') }}</h1></header>
+                        <section>{% block content %}{% endblock %}</section>
+                    </div><!-- /.col-md-8 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        {% endblock %}
+
+        <footer class="container">
+            <div id="elsewhere" class="pull-left">
+                <ul>
+                    <li><a href="mailto:jmikola,at,gmail,dot,com">Email</a></li>
+                    <li><a href="http://github.com/jmikola">GitHub</a></li>
+                    <li><a href="http://twitter.com/jmikola">Twitter</a></li>
+                    <li><a href="http://foursquare.com/jmikola">Foursquare</a></li>
+                    <li><a href="http://linkedin.com/in/jmikola">LinkedIn</a></li>
+                    <li><a href="http://facebook.com/jmikola">Facebook</a></li>
+                    <li><a href="http://reddit.com/user/jmikola">Reddit</a></li>
+                </ul>
+            </div>
+
+            <div class="byline pull-right">
+                <small>Published with <a href="https://sculpin.io/">Sculpin</a></small>
+            </div>
+        </footer><!-- /.container -->
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        {% block scripts %}
+        {% endblock %}
+
+        {% if site.google_analytics_tracking_id %}
+        <script>
+            var _gaq = [['_setAccount', '{{ site.google_analytics_tracking_id }}'], ['_trackPageview']];
+
+            (function(d, t) {
+                var g = d.createElement(t); g.async = true; g.src = '//www.google-analytics.com/ga.js';
+                var s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(g, s);
+            })(document, 'script');
+        </script>
+        {% endif %}
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>

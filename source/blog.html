@@ -1,0 +1,14 @@
+---
+layout: default
+title: Blog Posts
+use: [posts]
+
+---
+{% if data.posts is not empty %}
+  <ul>
+  {% for post in data.posts %}
+      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
+{% else %}
+{% endif %}
