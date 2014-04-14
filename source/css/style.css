@@ -12,6 +12,13 @@ header a.navbar-brand {
 
 header ul.navbar-nav li span.glyphicon { margin-right: 0.5em; }
 
+span.post-date-inline {
+    font-size: 0.8em;
+    font-variant: small-caps;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
 article.container {
     font-size: 1.2em;
 }
