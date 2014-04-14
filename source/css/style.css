@@ -1,5 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans);
 
 header a.navbar-brand {
     background-position: left center;
@@ -7,6 +6,8 @@ header a.navbar-brand {
     background-size: contain;
     background-image: url("http://www.gravatar.com/avatar/f23700b51dc0c196c1dc02f84aeeecdf?size=128");
     padding-left: 64px;
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
 }
 
 header ul.navbar-nav li span.glyphicon { margin-right: 0.5em; }
