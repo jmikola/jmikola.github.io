@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }}</title>
+        <title>{% block title %}{{ page.title|default(site.title) }}{% endblock %}</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
