@@ -54,21 +54,13 @@
         {% endblock %}
 
         <footer class="container">
-            <div id="elsewhere" class="pull-left">
-                <ul>
-                    <li><a href="mailto:jmikola,at,gmail,dot,com">Email</a></li>
-                    <li><a href="http://github.com/jmikola">GitHub</a></li>
-                    <li><a href="http://twitter.com/jmikola">Twitter</a></li>
-                    <li><a href="http://foursquare.com/jmikola">Foursquare</a></li>
-                    <li><a href="http://linkedin.com/in/jmikola">LinkedIn</a></li>
-                    <li><a href="http://facebook.com/jmikola">Facebook</a></li>
-                    <li><a href="http://reddit.com/user/jmikola">Reddit</a></li>
-                </ul>
-            </div>
+            <ul class="list-inline pull-left">
+                <li><a href="mailto:jmikola,at,gmail,dot,com" class="iconify">Email</a></li>
+                <li><a href="http://github.com/jmikola" class="iconify">GitHub</a></li>
+                <li><a href="http://twitter.com/jmikola" class="iconify">Twitter</a></li>
+            </ul>
 
-            <div class="byline pull-right">
-                <small>Published with <a href="https://sculpin.io/">Sculpin</a></small>
-            </div>
+            <p class="byline pull-right">&copy; {{ 'now'|date('Y') }} Jeremy Mikola</p>
         </footer><!-- /.container -->
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
