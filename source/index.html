@@ -4,14 +4,4 @@ title: Jeremy Mikola
 use: [posts]
 
 ---
-{% if data.posts is not empty %}
-    <ul>
-    {% for post in data.posts %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-            <span class="post-date-inline">{{ post.date|date("M j, Y") }}</span>
-        </li>
-    {% endfor %}
-    </ul>
-{% else %}
-{% endif %}
+{% include 'includes/post-list.twig' with {'posts': data.posts} only %}
