@@ -242,7 +242,7 @@ Hack's new syntax but are interested in a faster runtime for their applications.
 For libaries and frameworks such as Doctrine and Symfony, both of which were
 well-represented in the audience, we'd like to ensure that our projects work as
 well with HHVM as they do with PHP proper. On a related note, the HHVM team also
-had a [Open Academy][fb-open-academy] class this semester assigned to moving a
+had a [Open Academy][fb-openacademy] class this semester assigned to moving a
 handful of open-source PHP projects closer to 100% test suite compatibility
 (all progress is being tracked [here][hhvm-frameworks]).
 
