@@ -1,5 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans);
 
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 header a.navbar-brand {
     background-position: left center;
     background-repeat: no-repeat;
