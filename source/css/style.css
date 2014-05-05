@@ -28,9 +28,8 @@ span.post-date-inline {
 }
 
 article.post section.post-body { line-height: 1.5em; }
-article.post div.post-tags span.glyphicon { margin-right: 0.5em; }
-article.post div.post-nav span.glyphicon { margin-right: 0.5em; }
-article.post div.post-nav a.list-group-item {
+article.post section.post-sidebar span.glyphicon { margin-right: 0.5em; }
+article.post section.post-sidebar div.post-nav a.list-group-item {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
