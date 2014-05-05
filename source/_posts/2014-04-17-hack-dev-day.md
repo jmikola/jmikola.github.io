@@ -430,7 +430,7 @@ ones. I have no idea when I'll make it back to Palo Alto again, but you can bet
 the very first place I'll visit (after the obligatory In-N-Out stop) will be
 [Philz Coffee] to order a Mint Mojito Iced Coffee.[^2]
 
-![][philz-mojito]
+![](/images/20140417-philz_coffee.jpg "Mint Mojito Iced Coffee from Philz Coffee"){.img-responsive .img-rounded}
 
   [^1]: [Generics and Type Inference][hack-inference]
 
@@ -511,5 +511,3 @@ the very first place I'll visit (after the obligatory In-N-Out stop) will be
   [swelsh]: https://twitter.com/simon_w
   [sgolemon]: https://twitter.com/SaraMG
   [vberchet]: https://twitter.com/vberchet
-
-  [philz-mojito]: https://irs3.4sqi.net/img/general/width960/14977915_rJJ6FAzZsqjo5BPy1MCPA--O8JlX3T_RdJMccCoUCak.jpg "Mint Mojito Iced Coffee from Philz Coffee" {.img-responsive .img-rounded}
