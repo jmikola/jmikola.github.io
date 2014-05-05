@@ -5,6 +5,7 @@ tags:
     - fios
     - actiontec
     - networking
+disqus_identifier: 5367e7caa8780bca7b88158e
 ---
 Hoboken is blessed with some decent options when it comes to internet service.
 Verizon started wiring up most of the town with FiOS back in 2009. This was

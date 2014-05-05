@@ -3,7 +3,7 @@ title: 2dsphere, GeoJSON, and Doctrine MongoDB
 tags:
     - doctrine
     - mongodb
-
+disqus_identifier: 5367e7aaa8780bca7b88158c
 ---
 It seems that GeoJSON is all the rage these days. Last month, Ian Bentley shared
 a bit about the [new geospatial features in MongoDB 2.4][mongodb-geo]. Derick
