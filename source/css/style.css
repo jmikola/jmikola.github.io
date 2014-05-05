@@ -4,7 +4,7 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header a.navbar-brand {
+body > header a.navbar-brand {
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -14,7 +14,7 @@ header a.navbar-brand {
     font-weight: bold;
 }
 
-header ul.navbar-nav li span.glyphicon { margin-right: 0.5em; }
+body > header ul.navbar-nav li span.glyphicon { margin-right: 0.5em; }
 
 span.post-date-inline {
     font-size: 0.8em;
@@ -36,15 +36,15 @@ article.post div.post-nav a.list-group-item {
     white-space: nowrap;
 }
 
-footer {
+body > footer {
     border-top: 3px solid #ddd;
     margin: 1em 0 1em;
     padding-top: 0.5em;
 }
 
-footer ul.list-inline li { padding-left: 0; padding-right: 0; }
+body > footer ul.list-inline li { padding-left: 0; padding-right: 0; }
 
-footer a.iconify {
+body > footer a.iconify {
     display: inline-block;
     background-position: left center;
     background-repeat: no-repeat;
@@ -58,12 +58,12 @@ footer a.iconify {
     overflow: hidden;
 }
 
-footer a:hover { opacity: 1.0; }
-footer a[href*="gmail"]   { background-image: url("http://www.google.com/s2/favicons?domain=mail.google.com"); }
-footer a[href*="github"]  { background-image: url("http://www.google.com/s2/favicons?domain=github.com"); }
-footer a[href*="twitter"] { background-image: url("http://www.google.com/s2/favicons?domain=twitter.com"); }
+body > footer a:hover { opacity: 1.0; }
+body > footer a[href*="gmail"]   { background-image: url("http://www.google.com/s2/favicons?domain=mail.google.com"); }
+body > footer a[href*="github"]  { background-image: url("http://www.google.com/s2/favicons?domain=github.com"); }
+body > footer a[href*="twitter"] { background-image: url("http://www.google.com/s2/favicons?domain=twitter.com"); }
 
-footer p.byline {
+body > footer p.byline {
     font-size: 0.8em;
     font-variant: small-caps;
     font-weight: bold;
