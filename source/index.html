@@ -11,11 +11,6 @@ use: [posts]
                 <header><h2>Blog Posts</h2></header>
                 <section>
                     {% include 'includes/post-list.twig' with {'posts': data.posts} only %}
-
-                    <div class="alert alert-info">
-                        <span class="glyphicon glyphicon-exclamation-sign pull-left" style="font-size: 2em;"></span>
-                        <p style="margin-left: 3em">If you're wondering why this column is so much shorter than the one on the right, it's because I haven't blogged regularly in nearly ten years.</p>
-                    </div>
                 </section>
             </div><!-- /.col-md-6 -->
             <div class="col-md-6">
