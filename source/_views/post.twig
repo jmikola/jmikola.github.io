@@ -15,12 +15,12 @@
                     <div class="panel panel-default">
                         <div class="list-group">
                             <div class="list-group-item">
-                                <span class="glyphicon glyphicon-time"></span>
+                                <i class="fa fa-clock-o fa-fw"></i>
                                 {{ page.date|date("F j, Y") }}
                             </div>
                             {% if site.disqus_shortname %}
                                 <div class="list-group-item">
-                                    <span class="glyphicon glyphicon-comment"></span>
+                                    <i class="fa fa-comments fa-fw"></i>
                                     <a href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.disqus_identifier|default(site.url ~ page.url) }}">Comments</a>
                                     <script type="text/javascript">
                                         var disqus_shortname = '{{ site.disqus_shortname }}';
@@ -41,7 +41,7 @@
                             <div class="panel-heading">Tags</div>
                             <div class="list-group">
                                 {% for tag in page.tags %}
-                                    <a href="/blog/tags/{{ tag|url_encode(true) }}" class="list-group-item"><span class="glyphicon glyphicon-tag"></span>{{ tag }}</a>
+                                    <a href="/blog/tags/{{ tag|url_encode(true) }}" class="list-group-item"><i class="fa fa-tag fa-fw"></i> {{ tag }}</a>
                                 {% endfor %}
                             </div><!-- /.list-group -->
                         </div><!-- /.post-tags .panel -->
@@ -60,10 +60,10 @@
                             </div><!-- /.panel-heading -->
                             <div class="list-group">
                                 {% if page.next_post %}
-                                    <a href="{{ page.next_post.url }}" title="{{ page.next_post.title }}" class="list-group-item"><span class="glyphicon glyphicon-circle-arrow-right"></span>{{ page.next_post.title }}</a>
+                                    <a href="{{ page.next_post.url }}" title="{{ page.next_post.title }}" class="list-group-item"><i class="fa fa-arrow-circle-right fa-fw"></i> {{ page.next_post.title }}</a>
                                 {% endif %}
                                 {% if page.previous_post %}
-                                    <a href="{{ page.previous_post.url }}" title="{{ page.previous_post.title }}" class="list-group-item"><span class="glyphicon glyphicon-circle-arrow-left"></span>{{ page.previous_post.title }}</a>
+                                    <a href="{{ page.previous_post.url }}" title="{{ page.previous_post.title }}" class="list-group-item"><i class="fa fa-arrow-circle-left fa-fw"></i> {{ page.previous_post.title }}</a>
                                 {% endif %}
                             </div><!-- /.list-group -->
                         </div><!-- /.post-nav .panel -->

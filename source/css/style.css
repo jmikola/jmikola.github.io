@@ -14,7 +14,7 @@ body > header a.navbar-brand {
     font-weight: bold;
 }
 
-body > header ul.navbar-nav li span.glyphicon { margin-right: 0.5em; }
+body > header ul.navbar-nav li i.fa { margin-right: 0.5em; }
 
 span.post-date-inline {
     font-size: 0.8em;
@@ -28,7 +28,6 @@ span.post-date-inline {
 }
 
 article.post section.post-body { line-height: 1.5em; }
-article.post section.post-sidebar span.glyphicon { margin-right: 0.5em; }
 article.post section.post-sidebar div.post-nav a.list-group-item {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -41,30 +40,7 @@ body > footer {
     padding-top: 0.5em;
 }
 
-body > footer ul.list-inline li { padding-left: 0; padding-right: 0; }
-
-body > footer a.iconify {
-    display: inline-block;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    opacity: 0.5;
-    height: 16px;
-    width: 16px;
-    /* see: http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/ */
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-body > footer a:hover { opacity: 1.0; }
-body > footer a[href*="gmail"]   { background-image: url("http://www.google.com/s2/favicons?domain=mail.google.com"); }
-body > footer a[href*="github"]  { background-image: url("http://www.google.com/s2/favicons?domain=github.com"); }
-body > footer a[href*="twitter"] { background-image: url("http://www.google.com/s2/favicons?domain=twitter.com"); }
-
 body > footer p.byline {
-    font-size: 0.8em;
-    font-variant: small-caps;
     font-weight: bold;
     opacity: 0.5;
 }
