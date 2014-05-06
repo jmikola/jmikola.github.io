@@ -23,8 +23,8 @@ was already wired for coax and I wasn't keen on hanging Cat5 cable from my
 apartment window down to the meter room, I went with coax and Verizon's bundled
 Actiontec MI424WR router.
 
-With FiOS, the MI424WR serves double duty as a [MoCa] bridge, converting coax
-to usable Ethernet, and router. As far as routers go, it's not too bad. There's
+With FiOS, the MI424WR serves double duty as a MoCa bridge, converting coax to
+usable Ethernet, and router. As far as routers go, it's not too bad. There's
 actually quite a lot of functionality buried behind all of the "Are you sure you
 want to see the advanced options?" prompts in its admin GUI. The MI424WR's
 diminutive [NAT table][nat-issue] is a common complaint, but I haven't been
