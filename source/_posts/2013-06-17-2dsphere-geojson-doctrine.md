@@ -1,5 +1,7 @@
 ---
 title: 2dsphere, GeoJSON, and Doctrine MongoDB
+also:
+    - http://blog.mongodb.org/post/53751481851/2dsphere-geojson-and-doctrine-mongodb
 tags:
     - doctrine
     - mongodb
