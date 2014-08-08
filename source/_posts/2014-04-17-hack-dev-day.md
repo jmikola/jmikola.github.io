@@ -381,7 +381,7 @@ proper development headers available locally (*this* is why we need
 option, as it made things much more bearable. I'll say nothing of
 [Victor Berchet][vberchet]'s efforts to assassinate my character:
 
-<blockquote class="twitter-tweet" align="center" heiglang="en"><p>Everybody work hard at the <a href="https://twitter.com/search?q=%23hackdevday&amp;src=hash">#hackdevday</a> while <a href="https://twitter.com/jmikola">@jmikola</a> keeps drinking.... <a href="http://t.co/gfBIA9BbPf">pic.twitter.com/gfBIA9BbPf</a></p>&mdash; Victor Berchet (@vberchet) <a href="https://twitter.com/vberchet/statuses/454095137103024128">April 10, 2014</a></blockquote>
+<blockquote class="twitter-tweet" align="center" lang="en"><p>Everybody work hard at the <a href="https://twitter.com/search?q=%23hackdevday&amp;src=hash">#hackdevday</a> while <a href="https://twitter.com/jmikola">@jmikola</a> keeps drinking.... <a href="http://t.co/gfBIA9BbPf">pic.twitter.com/gfBIA9BbPf</a></p>&mdash; Victor Berchet (@vberchet) <a href="https://twitter.com/vberchet/statuses/454095137103024128">April 10, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 During the hackathon, I had a moment to poke [Fabien][fabpot] about his thoughts
