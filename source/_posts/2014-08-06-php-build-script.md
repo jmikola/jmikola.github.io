@@ -20,6 +20,9 @@ I did get a number of responses to that tweet, mentioning projects such as
 development. At the time, those projects had limitations when it came to
 customizing build flags; however, I should note that [phpbrew][] has had a very
 active year of development since then and likely deserves some reconsideration.
+[Thierry Marianne][thierry-marianne] also shared some research he was doing to
+compile multiple versions of PHP using Fabric, which he since published as
+[php-compiler][].
 
 I initially started with Derick's [blog post][derick-php] on managing multiple
 PHP versions. One of the first changes I made was modifying it to use the
@@ -142,9 +145,11 @@ else finds it useful, too.
   [git-new-workdir]: http://nuclearsquid.com/writings/git-new-workdir/
   [internals-book]: http://www.phpinternalsbook.com/
   [mongo-php-driver]: https://github.com/mongodb/mongo-php-driver
+  [php-compiler]: https://github.com/thierrymarianne/php-compiler
   [php-git-multiple]: https://wiki.php.net/vcs/gitfaq#multiple_working_copies_workflow
   [php-svn-sparse]: https://wiki.php.net/vcs/svnfaq#sparse_directory_checkout_instructions
   [phpbrew]: https://github.com/phpbrew/phpbrew
   [phpenv]: https://github.com/phpenv/phpenv
   [ppa]: https://launchpad.net/ubuntu/+ppas
   [sh-array]: http://stackoverflow.com/a/6500474/162228
+  [thierry-marianne]: https://twitter.com/thierrymarianne
