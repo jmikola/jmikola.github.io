@@ -4,7 +4,6 @@ tags:
     - php
 disqus_identifier: 53e4eda0a1797b61365fa59c
 ---
-
 Before joining MongoDB to work on the [PHP driver][mongo-php-driver] a couple of
 years ago, I was perfectly content the PHP binaries in my operating system's
 package manager. Sure, every now and then I dipped into a [PPA][ppa] for a
@@ -110,7 +109,7 @@ in `$base_install_dir` for storing INI and conf files: `etc-5.5` and
 `etc-5.5/conf.d`. Were I to build PHP with the same label again, we wouldn't see
 these messages as it'd find the existing directories and use them as-is. In
 practice, I only use a single INI file for these PHP installs, but we create
-both paths and PHP has build options for each of them.
+both paths as PHP has build options for each of them.
 
 My INI file looks like the following:
 
