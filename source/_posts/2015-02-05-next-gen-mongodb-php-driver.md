@@ -7,9 +7,10 @@ disqus_identifier: 54d298fa3ba4928904f6c94e
 draft: true
 ---
 > In the beginning [Kristina][kchodorow] created the MongoDB PHP driver. Now the
-PECL `mongo` extension was new and alpha, innovation was over the surface of the
-API, and Kristina's fingers were hovering over the keyboard. And Kristina said,
-"Let there be MongoCollection," and there was basic functionality.
+PECL `mongo` extension was new and untested, write operations tended to be
+fire-and-forget, and Boolean parameters made more sense than `$options` arrays.
+And Kristina said, "Let there be MongoCollection," and there was basic
+functionality.
 
 Since the PHP driver first appeared on the scene, MongoDB has gone through many
 changes. Replica sets and sharding arrived early on, but things like the
@@ -61,11 +62,13 @@ too).
 
 Sitting below that library we have the lower level drivers (one per platform).
 These extensions will effectively form the glue between PHP and HHVM and our
-system libraries (libmongoc and libbson). While these extensions will certainly
-expose a public API, it will be limited to the most essential functionality:
+system libraries (libmongoc and libbson). These extensions will expose an
+identical public API for the most essential and performance-sensitive
+functionality:
 
  * Connection management
  * BSON encoding and decoding
+ * Object document serialization (to support ODM libraries)
  * Executing commands and write operations
  * Handling queries and cursors
 
@@ -73,6 +76,9 @@ By decoupling the driver internals and a high-level API into extensions and PHP
 libraries, respectively, we hope to reduce our maintainence burden and allow for
 faster iteration on new features. As a welcome side effect, this also lowers the
 barrier of entry for would-be open source contributors to the driver.
+Additionally, an identical public API for these extensions will make it that
+much easier to port an application across PHP runtimes, whether the application
+uses the low-level driver directly or a higher-level PHP library.
 
 [GridFS][gridfs] is a great example of why we chose this direction. Although we
 implemented GridFS in C for our 1.x driver, it is actually quite a high-level
@@ -126,13 +132,14 @@ the essential components across GitHub and JIRA:
 </table>
 
 The existing [PHP][jira-php] project in JIRA will remain open for reporting bugs
-against the 1.x driver, but we ask that you use the new projects above for
-anything pertaining to our next-generation driver.
+against the 1.x driver, but we would ask that you use the new projects above for
+anything pertaining to our next-generation drivers.
 
   *[API]: Application programming interface
   *[CRUD]: Create read update delete
   *[HHVM]: HipHop Virtual Machine
   *[HNI]: HHVM native interface
+  *[ODM]: Object document mapper
   *[PEAR]: PHP Extension and Application Repository
   *[PECL]: PHP Extension Community Library
 
