@@ -74,10 +74,11 @@ functionality:
 
 By decoupling the driver internals and a high-level API into extensions and PHP
 libraries, respectively, we hope to reduce our maintainence burden and allow for
-faster iteration on new features. As a welcome side effect, this also makes it easier for anyone to contribute to the driver.
-Additionally, an identical public API for these extensions will make it that
-much easier to port an application across PHP runtimes, whether the application
-uses the low-level driver directly or a higher-level PHP library.
+faster iteration on new features. As a welcome side effect, this also makes it
+easier for anyone to contribute to the driver. Additionally, an identical public
+API for these extensions will make it that much easier to port an application
+across PHP runtimes, whether the application uses the low-level driver directly
+or a higher-level PHP library.
 
 [GridFS][gridfs] is a great example of why we chose this direction. Although we
 implemented GridFS in C for our 1.x driver, it is actually quite a high-level
@@ -85,7 +86,9 @@ specification. Its API is just an abstraction for accessing two collections:
 files (i.e. metadata) and chunks (i.e. blocks of data). Likewise, all of the
 syntactic sugar found in the 1.x driver, such as processing uploaded files or
 exposing GridFS files as PHP streams, can be implemented in pure PHP. Provided
-we have performant methods for reading from and writing to GridFS' collections – and thanks to our low level extensions, we will – shifting this API to PHP is win-win.
+we have performant methods for reading from and writing to GridFS' collections
+– and thanks to our low level extensions, we will – shifting this API to PHP is
+win-win.
 
 Earlier I mentioned that we expect the PHP library to be a common dependency for
 *most* applications, but not *all*. Some users may prefer to stick to the
