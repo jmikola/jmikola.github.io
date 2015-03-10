@@ -1,9 +1,10 @@
 ---
-title: Introducing the Next-generation MongoDB PHP Driver
+title: Designing the New PHP and HHVM MongoDB Drivers
 tags:
     - mongodb
     - php
-disqus_identifier: 54d298fa3ba4928904f6c94e
+    - hhvm
+disqus_identifier: 54ff4821be0bccf640b67800
 draft: true
 ---
 > In the beginning [Kristina][kchodorow] created the MongoDB PHP driver. Now the
@@ -49,7 +50,7 @@ pure PHP library, like [mongofill][], without sacrificing performance.
 Thankfully, we can compromise! Here is a look at the architecture for our
 next-generation PHP driver:
 
-![](/images/20150205-driver_arch.svg){.img-responsive}
+![](/images/20150310-driver_arch.svg){.img-responsive}
 
 At the top of this stack sits a pure PHP library, which we will distribute as a
 Composer package. This library will provide an API similar to what users have
