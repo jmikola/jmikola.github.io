@@ -459,7 +459,6 @@ the very first place I'll visit (after the obligatory In-N-Out stop) will be
   [doctrine-annotations]: https://github.com/doctrine/annotations
   [doctrine-collection]: https://github.com/doctrine/collections/blob/v1.2/lib/Doctrine/Common/Collections/Collection.php
   [fb-recap]: https://code.facebook.com/posts/683726355017955/hack-developer-day-recap/
-  [fb-group]: https://www.facebook.com/groups/hackdevday14/
   [fb-videos]: https://www.youtube.com/playlist?list=PLb0IAmt7-GS2fdbb1vVdP8Z8zx1l2L8YS
   [fb-openacademy]: https://www.facebook.com/notes/facebook-engineering/facebook-open-academy-bringing-open-source-to-cs-curricula/10151806121378920
   [fb-15]: https://foursquare.com/v/facebook-mpk-15/504e4421e4b0deb86ca8b33a
@@ -488,7 +487,6 @@ the very first place I'll visit (after the obligatory In-N-Out stop) will be
   [reviews.facebook.net]: https://reviews.facebook.net/
   [Phabricator]: http://phabricator.org/
   [Philz Coffee]: https://foursquare.com/v/philz-coffee/4dd1580eb3adb047f5024231
-  [philz-mojito]: https://foursquare.com/v/philz-coffee/4dd1580eb3adb047f5024231/photos?openPhotoId=53443a3f498ef511366cbc41
   [PHP-1051]: https://jira.mongodb.org/browse/PHP-1051
   [php-json]: https://github.com/mongodb/mongo-php-driver/blob/1.5.1/contrib/php-json.c
   [phpBB]: https://www.phpbb.com/
