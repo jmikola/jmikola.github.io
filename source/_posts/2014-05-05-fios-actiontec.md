@@ -33,7 +33,7 @@ affected by it.
 Everything was well and good until I stumbled upon my wireless network's SSID
 and encryption key on Verizon's account management page:
 
-![][verizon-account]
+!["Verizon account management UI"][verizon-account]
 
 <small><em>Note: if it wasn't obvious by the SSID and WEP encryption, I took
 this screenshot after a router reset.</em></small>
@@ -133,7 +133,7 @@ For FiOS TV customers with a STB, the [original thread][dsl-bridge] I referenced
 has since been superseded with a [new guide][dsl-bridge-vod], which includes
 additional instructions for ensuring compatibility with VOD services.
 
-![][fios-wrt160n]
+!["Router installation"][fios-wrt160n]
 
 When the bridge up and running, there was just one more thing to fix. My MI424WR
 had been configured so long ago that I completely forgot about Verizon's
