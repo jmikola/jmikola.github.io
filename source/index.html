@@ -7,23 +7,15 @@ use: [posts]
 {% block content_wrapper %}
     <div id="content" class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8 col-md-offset-1">
                 <header><h2>Blog Posts</h2></header>
                 <section>
                     {% include 'includes/post-list.twig' with {'posts': data.posts} only %}
                 </section>
-            </div><!-- /.col-md-6 -->
-            <div class="col-md-6">
-                <header><h2>Projects</h2></header>
-                <section>
-                    <p>I split most of my development time between helping <a href="http://derickrethans.nl/">Derick</a> and <a href="http://bjori.blogspot.com/">Hannes</a> with the <a href="https://github.com/mongodb/mongo-php-driver">MongoDB PHP driver</a>, and working on <a href="https://github.com/doctrine/mongodb">Doctrine MongoDB</a> and the <a href="https://github.com/doctrine/mongodb">ODM</a> with <a href="http://jwage.com/">Jon Wage</a>.</p>
-
-                    <p>During this spring semester, I'm also working with a class of students from Facebook's <a href="https://www.facebook.com/OpenAcademyProgram">Open Academy</a> program to prototype a MongoDB driver for <a href="http://hhvm.com/">HHVM</a>. You can follow our progress <a href="https://github.com/10gen-labs/mongo-hhvm-driver">here</a>.</p>
-
-                    <p>Lastly, my <a href="https://github.com/jmikola?tab=repositories">GitHub account</a> may contain some repositories of interest.</p>
-                    </ul>
-                </section>
-            </div><!-- /.col-md-6 -->
+            </div><!-- /.col-md-8 -->
+            <div class="col-md-2">
+                <img src="/images/hotdog.png" alt="Lego hotdog guy" class="img-responsive">
+            </div><!-- /.col-md-5 -->
         </div><!-- /.row -->
     </div><!-- /.container -->
 {% endblock %}
