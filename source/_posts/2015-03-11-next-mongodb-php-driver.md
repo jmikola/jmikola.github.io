@@ -1,11 +1,12 @@
 ---
-title: Designing the New PHP and HHVM MongoDB Drivers
+title: Designing the Next PHP and HHVM MongoDB Drivers
+also:
+    - http://www.mongodb.com/blog/post/call-feedback-new-php-and-hhvm-drivers
 tags:
     - mongodb
     - php
     - hhvm
-disqus_identifier: 54ff4821be0bccf640b67800
-draft: true
+disqus_identifier: 55007b9af710fd5e149f0c63
 ---
 > In the beginning [Kristina][kchodorow] created the MongoDB PHP driver. Now the
 PECL `mongo` extension was new and untested, write operations tended to be
