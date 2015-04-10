@@ -70,11 +70,11 @@ guidance:
 
 ### Several Options for Handling Options
 
-In addition naming conventions, the spec acknowledges that each language has its
-own conventions for expressing optional parameters to functions. Ruby and Python
-support named parameters, JavaScript and PHP might use hash literals, C++ or C#
-may use an options class, and Java could opt for a fluent builder class.
-Ultimately, we decided not to allow method overloading, since it was only
+In addition to naming conventions, the spec acknowledges that each language has
+its own conventions for expressing optional parameters to functions. Ruby and
+Python support named parameters, JavaScript and PHP might use hash literals, C++
+or C# may use an options class, and Java could opt for a fluent builder class.
+Ultimately, we decided not to require method overloading, since it was only
 supported by a few languages.
 
 Required parameters, such as the `fieldName` for a distinct command or the
@@ -92,8 +92,7 @@ instruct the server to create a tailable cursor. Depending on the driver, these
 options might be specified via arguments to `find()` or any of various setter
 methods on a mutable Cursor object. The CRUD API now enforces consistent naming
 for these options and ensures they will all be specified in the same manner, be
-it an options structure for `find()` or fluent interface on a Cursor (prior to
-iteration).
+it an options structure for `find()` or a fluent interface.
 
 Ultimately, users should never have to think about whether these query options
 are modifiers within the query document or bit flags at the protocol level. That
@@ -131,17 +130,17 @@ require a `filter` option, which means it will take a bit more effort to
 inadvertently wipe out a collection (`deleteMany({})` instead of `remove()`).
 And lastly, we wanted to acknowledge that the difference between replacing an
 entire document and updating specific fields in one or many documents. By having
-each method check if thd document contains atomic modifiers, we hope to help
+each method check if the document contains atomic modifiers, we hope to help
 users avoid the mistake of clobbering an entire document when they expected to
 modify specific fields, or vice versa.
 
 ### Less is More
 
-Some things a better left unsaid. While the CRUD spec contains a lot of detail,
-there are a few subjects which aren't addressed:
+Some things are better left unsaid. While the CRUD spec contains a lot of
+detail, there are a few subjects which aren't addressed:
 
  * Read preferences
- * Write concern
+ * Write concerns
  * Fluent API for bulk writes
  * Explaining queries
 
@@ -173,7 +172,7 @@ through queries or command execution).
 ### Wrapping Up
 
 If you're interested in digging deeper into any of the topics discussed in this
-article (and some there weren't, such as error reporting), do give the
+article (and some that weren't, such as error reporting), do give the
 [CRUD API spec][crud] a look. We've also published a set of
 [standardized acceptance tests][tests] in YAML and JSON formats, which are being
 used by many of our [next generation drivers][nextgen] that implement the spec.
