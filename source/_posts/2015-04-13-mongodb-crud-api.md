@@ -9,11 +9,9 @@ draft: true
 ---
 One of the more notable challenges with maintaining a suite of
 [drivers][drivers] across many languages has been following individual language
-idioms while still keeping the drivers' APIs consistent with each other. For
+idioms while still keeping their APIs consistent with each other. For
 example, the Ruby driver should *feel* like any other Ruby library when it comes
-to design and naming conventions. At the same time, developers are better off
-not having to think about whether `remove()` deletes one or multiple documents
-by default, or the fact that some older drivers didn't even expose the option.
+to design and naming conventions. At the same time, the behavior for API calls should be the same across all drivers.
 
 Towards the end of 2014, a handful of MongoDB driver developers started working
 on a [CRUD API specification][crud] for our [next generation drivers][nextgen].
