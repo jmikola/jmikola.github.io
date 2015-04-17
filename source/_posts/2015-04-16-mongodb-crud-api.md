@@ -42,8 +42,8 @@ Brock (C and C++), and myself (representing PHP and other dynamic languages).
 
 ### What's in a Name?
 
-> There are only two hard things in Computer Science: cache invalidation and
-> naming things.
+> There are only two hard things in Computer Science: cache invalidation, naming
+> things, and off-by-one errors.
 >
 > &mdash; Phil Karlton
 
