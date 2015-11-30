@@ -117,17 +117,17 @@ the essential components across GitHub and JIRA:
     <tbody>
         <tr>
             <td>PHP Library</td>
-            <td markdown="1">[10gen-labs/mongo-php-library-prototype][gh-phplib]</td>
+            <td markdown="1">[mongodb/mongo-php-library][gh-phplib]</td>
             <td markdown="1">[PHPLIB][jira-phplib]</td>
         </tr>
         <tr>
             <td>PHP 5.x Driver (phongo)</td>
-            <td markdown="1">[10gen-labs/mongo-php-driver-prototype][gh-phpc]</td>
+            <td markdown="1">[mongodb/mongo-php-driver][gh-phpc]</td>
             <td markdown="1">[PHPC][jira-phpc]</td>
         </tr>
         <tr>
             <td>HHVM Driver (hippo)</td>
-            <td markdown="1">[10gen-labs/mongo-hhvm-driver-prototype][gh-hhvm]</td>
+            <td markdown="1">[mongodb/mongo-hhvm-driver][gh-hhvm]</td>
             <td markdown="1">[HHVM][jira-hhvm]</td>
         </tr>
     </tbody>
@@ -157,10 +157,10 @@ anything pertaining to our next-generation drivers.
   [hhvm]: http://hhvm.com/
   [hhvm-extension-api]: https://github.com/facebook/hhvm/wiki/Extension-API
   [kchodorow]: http://www.kchodorow.com/
-  [mongo-hhvm-driver]: https://github.com/10gen-labs/mongo-hhvm-driver
-  [gh-phplib]: https://github.com/10gen-labs/mongo-php-library-prototype
-  [gh-phpc]: https://github.com/10gen-labs/mongo-php-driver-prototype
-  [gh-hhvm]: https://github.com/10gen-labs/mongo-hhvm-driver-prototype
+  [mongo-hhvm-driver]: https://github.com/mongodb-labs/mongo-hhvm-driver-unsupported
+  [gh-phplib]: https://github.com/mongodb/mongo-php-library
+  [gh-phpc]: https://github.com/mongodb/mongo-php-driver
+  [gh-hhvm]: https://github.com/mongodb/mongo-hhvm-driver
   [jira-phplib]: https://jira.mongodb.org/browse/PHPLIB
   [jira-php]: https://jira.mongodb.org/browse/PHP
   [jira-phpc]: https://jira.mongodb.org/browse/PHPC
