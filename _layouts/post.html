@@ -4,7 +4,7 @@ layout: default
 
 {% include nav.html %}
 
-<div class="content">
+<main>
   <article>
     <header class="post-meta">
       <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
@@ -25,4 +25,4 @@ layout: default
 
     {% include disqus_comments.html %}
   </article>
-</div>
+</main>

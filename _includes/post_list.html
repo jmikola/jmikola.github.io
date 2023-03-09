@@ -14,7 +14,7 @@
   <ul class="post-list">
     {%- for post in posts limit: include.limit -%}
       <li>
-        <span class="post-date">{{- post.date | date: "%Y年 %m月 %d日" -}}</span>
+        <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%Y" }}<span>年 </span>{{- post.date | date: "%m" -}}<span>月 </span>{{- post.date | date: "%d" -}}<span>日</span></time>
         <a href="{{ post.url | relative_url }}">
           {%- if include.category == "jrl" -%}
             {{ post.title | escape | replace: "Jmikola Reporting Live ", "&hellip;" }}
