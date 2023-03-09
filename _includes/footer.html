@@ -1,0 +1,17 @@
+<footer class="site-footer">
+  <ul class="links">
+    {%- if site.feed.path -%}
+      <li><a href="{{ site.feed.path | relative_url }}">rss</a></li>
+    {%- endif -%}
+    {%- if site.author.twitter -%}
+      <li><a href="https://twitter.com/{{ site.author.twitter }}">twitter</a></li>
+    {%- endif -%}
+    {%- if site.author.github -%}
+      <li><a href="https://github.com/{{ site.author.github }}">github</a></li>
+    {%- endif -%}
+  </ul>
+
+  <p>
+    <a href="mailto:{{ site.email }}">{{ site.author.name | downcase }}</a>
+  </p>
+</footer>

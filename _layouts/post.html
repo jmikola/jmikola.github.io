@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% include nav.html %}
+
+<div class="content">
+  <article>
+    <header class="post-meta">
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {%- if site.disqus_shortname and page.disqus_id -%}
+        <br><a href="{{ page.url }}#disqus_thread"><span class="disqus-comment-count" data-disqus-identifier="{{ page.disqus_id }}">Comments</span></a>
+      {%- endif -%}
+    </header>
+    
+    <h1>{{ page.title }}</h1>
+
+    {{ content }}
+
+    {%- if page.also -%}
+    <footer class="post-also">
+      This post was also published on <a href="{{ page.also }}">{{ page.also | domain_name }}</a></p>
+    </footer>
+    {%- endif -%}
+
+    {% include disqus_comments.html %}
+  </article>
+</div>

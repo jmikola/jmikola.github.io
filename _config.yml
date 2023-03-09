@@ -1,0 +1,74 @@
+# Site settings
+title: "jmikola.net"
+email: "jmikola@gmail.com"
+description: ""
+url: "https://jmikola.github.io"
+
+google_analytics_id: "UA-18627379-1"
+disqus_shortname: "jmikola-net"
+
+author:
+  name: Jeremy Mikola
+  twitter: jmikola
+  github: jmikola
+  url: https://jmikola.net/
+
+# https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "_posts/blog"
+      type: "posts"
+    values:
+      category: "blog"
+      permalink: "/:slugified_categories/:slug/"
+  -
+    scope:
+      path: "_posts/jrl"
+      type: "posts"
+    values:
+      layout: "post_jrl"
+      category: "jrl"
+      permalink: "/:slugified_categories/:year:month:day/:slug/"
+
+# https://jekyllrb.com/docs/configuration/options/
+strict_front_matter: true
+
+# https://jekyllrb.com/docs/configuration/liquid/
+liquid:
+  error_mode: strict
+  strict_filters: true
+  strict_variables: false
+
+exclude:
+  - "bin/"
+  - "composer.json"
+  - "composer.lock"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "Makefile"
+  - "README.md"
+  - "vendor/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# https://github.com/jekyll/jekyll-feed
+feed:
+  path: "/atom.xml"
+
+# https://github.com/jekyll/jekyll-gist
+gist:
+  noscript: false # TODO
+
+# https://github.com/jekyll/jekyll-seo-tag
+# TODO

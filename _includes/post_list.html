@@ -1,0 +1,31 @@
+{%- if include.category -%}
+  {%- assign posts = site.categories[include.category] -%}  
+{%- else -%}
+  {%- assign posts = site.posts -%}
+{%- endif -%}
+
+{%- if include.limit and posts.size > include.limit -%}
+  {%- assign limit_exceeded = true -%}
+{%- else -%}
+  {%- assign limit_exceeded = false -%}
+{%- endif -%}
+
+{%- if posts.size > 0 -%}
+  <ul class="post-list">
+    {%- for post in posts limit: include.limit -%}
+      <li>
+        <span class="post-date">{{- post.date | date: "%Y年 %m月 %d日" -}}</span>
+        <a href="{{ post.url | relative_url }}">
+          {%- if include.category == "jrl" -%}
+            {{ post.title | escape | replace: "Jmikola Reporting Live ", "&hellip;" }}
+          {%- else -%}
+            {{ post.title | escape }}
+          {%- endif -%}
+        </a>
+      </li>
+    {%- endfor -%}
+    {%- if limit_exceeded and include.show_more_url -%}
+      <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "more&hellip;" }}</a></li>
+    {%- endif -%}
+  </ul>
+{%- endif -%}

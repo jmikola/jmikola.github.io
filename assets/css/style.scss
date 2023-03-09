@@ -1,0 +1,142 @@
+---
+---
+$baseurl: "{{ site.baseurl }}";
+$ff-mono: "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Consolas", monospace;
+$ff-serif: "DejaVu Serif", "Bitstream Vera Serif", "Georgia", serif;
+$ff-sans: "DejaVu Sans", "Bitstream Vera Sans", "Helvetica", "Arial", sans-serif;
+
+html, body { margin: 0; }
+
+html {
+    background-color: #eee;
+    color: #000;
+    font-family: $ff-serif;
+    font-size: 16px;
+    line-height: 150%;
+    padding: 0;
+}
+
+body { padding: 1rem; }
+
+nav, main, footer.site-footer {
+    margin: 1rem auto;
+    max-width: 55rem;
+}
+
+nav {
+  padding: 0 0.5rem;
+}
+
+div.content {
+  background: #fafafa;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+
+  h2:first-child { margin-top: 1rem; }
+}
+
+footer.site-footer {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+
+  ul, p {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0;
+  }
+
+  ul.links {
+    li { display: inline; }
+
+    li:not(:first-child)::before {
+      content: " | ";
+    }
+  }
+}
+
+h1.site-title {
+  font-family: $ff-sans;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0.25rem 0.5rem;
+  padding: 0 0.5rem 0 2.5rem;
+  line-height: 1em;
+
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("#{$baseurl}/assets/img/avatars/jmikola_cartoon.png");
+}
+
+ul.post-list {
+  list-style: none;
+  padding-left: 1rem;
+
+  li span.post-date {
+    color: #ccc;
+    font-family: $ff-mono;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+
+  li:hover span.post-date {
+    color: #333;
+  }
+}
+
+article {
+  h1 { border-bottom: 2px solid #ccc;}
+
+  header.post-meta { text-align: right; }
+
+  footer.post-also {
+    margin-top: 2rem;
+    text-align: right;
+  }
+}
+
+article > table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+  border-style: ridge;
+
+  th, td {
+    border-collapse: collapse;
+    border-style: ridge;
+    padding: 0.3rem;
+  }
+}
+
+h2, h3, h4, h5, h6 { margin-top: 2rem; }
+
+hr { margin: 2rem 0; }
+
+p { margin: 1rem 0; }
+
+a { text-decoration: none; }
+
+pre, code { font-family: $ff-mono; }
+pre       { font-size: 14px; line-height: 125%; }
+
+div.highlighter-rouge code {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  padding: 1rem;
+  background: #fff;
+}
+
+blockquote {
+  font-style: italic;
+  padding: 1rem;
+
+  p { margin: 0; }
+  p:not(:first-child) { margin-top: 1rem; }
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}

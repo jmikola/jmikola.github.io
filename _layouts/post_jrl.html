@@ -1,0 +1,25 @@
+---
+layout: post
+---
+
+{%- if page.youtube_id -%}
+  <iframe style="aspect-ratio: 16/9; width: 100%" src="https://www.youtube-nocookie.com/embed/{{ page.youtube_id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+{%- endif -%}
+
+{{ content }}
+
+{%- if page.next_in_category or page.previous_in_category -%}
+<footer>
+  <ul>
+    {%- comment -%}
+      next/previous will be older/newer, respectively
+    {%- endcomment -%}
+    {%- if page.next_in_category -%}
+      <li>Previously <a href="{{ page.next_in_category.url }}">{{ page.next_in_category.title | replace: "Jmikola Reporting Live ", "" }}</a> on {{ page.next_in_category.date | date: "%b %-d, %Y" }}</li>
+    {%- endif -%}
+    {%- if page.previous_in_category -%}
+      <li>Subsequently <a href="{{ page.previous_in_category.url }}">{{ page.previous_in_category.title | replace: "Jmikola Reporting Live ", "" }}</a> on {{ page.previous_in_category.date | date: "%b %-d, %Y" }}</li>
+    {%- endif -%}
+  </ul>
+</footer>
+{%- endif -%}
