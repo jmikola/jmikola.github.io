@@ -1,5 +1,5 @@
 ---
-title: 'Jmikola Reporting Live from Adams St'
+title: 'Jmikola Reporting Live from Adams St.'
 youtube_id: XtOLJcvUHoc
 
 ---
